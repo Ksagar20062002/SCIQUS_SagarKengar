@@ -36,6 +36,13 @@ The project utilizes MongoDB for storing student data and implements robust erro
 2. Install dependencies using `npm install`.
 
 # Implementation
+![image](https://github.com/Ksagar20062002/SCIQUS_SagarKengar/assets/156411259/b4078f81-78d8-4619-8a9d-76fee40f3a17)
+![image](https://github.com/Ksagar20062002/SCIQUS_SagarKengar/assets/156411259/de295edd-3c67-4a5e-8953-6af27097e5d5)
+![image](https://github.com/Ksagar20062002/SCIQUS_SagarKengar/assets/156411259/7b8123cd-0885-4024-af24-c52f636a9530)
+![image](https://github.com/Ksagar20062002/SCIQUS_SagarKengar/assets/156411259/23394357-62c0-4eef-a8fb-468c23d927e0)
+![image](https://github.com/Ksagar20062002/SCIQUS_SagarKengar/assets/156411259/d94e2653-d43e-4854-92ae-ede581306ce7)
+![image](https://github.com/Ksagar20062002/SCIQUS_SagarKengar/assets/156411259/bda882a7-b37c-4284-ba43-489f69d061b8)
+![image](https://github.com/Ksagar20062002/SCIQUS_SagarKengar/assets/156411259/3e2e87d5-aca1-4546-8b25-e45aca6e54b5)
 
 
 
