@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .register-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .register-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .register-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+
+    .error-message {
+      color: #ff0000;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-container">
+    <h2>Student Registration</h2>
+    <form class="register-form"  action="/Landing" method="POST">
+      <div class="form-group">
+      </div>
+      <div class="form-group">
+        <label for="studentEmail">Email:</label>
+        <input type="email" id="studentEmail" name="studentEmail" required>
+        <div id="studentEmailError" class="error-message"></div>
+      </div>
+      <div class="form-group">
+        <label for="studentUsername">Username:</label>
+        <input type="text" id="studentUsername" name="studentUsername" required>
+        <div id="studentUsernameError" class="error-message"></div>
+      </div>
+      <div class="form-group">
+        <label for="studentPassword">Password:</label>
+        <input type="password" id="studentPassword" name="studentPassword" required>
+        <div id="studentPasswordError" class="error-message"></div>
+      </div>
+      <div class="form-group">
+        <label for="studentDOB">Date of Birth:</label>
+        <input type="date" id="studentDOB" name="studentDOB" required>
+        <div id="studentDOBError" class="error-message"></div>
+      </div>
+      <div class="form-group">
+        <label for="studentGender">Gender:</label>
+        <select id="studentGender" name="studentGender" required>
+          <option value="" disabled selected>Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <div id="studentGenderError" class="error-message"></div>
+      </div>
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        strong {
+            color: #4CAF50;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('Nav'); %>
+    <h1>Welcome, <%= Perti_Admin.adminUsername %>!</h1>
+
+    <h2>List of Students</h2>
+
+    <form action="/student/add/<%= Perti_Admin._id %>" method="GET">
+        <button>New Student</button>
+    </form>
+    <ul>
+        <% studentarr.forEach(student=> { %>
+            <li>
+                <strong>Email:</strong>
+                <%= student.studentEmail %><br>
+                    <strong>Username:</strong>
+                    <%= student.studentUsername %>
+                        <div>
+                            <form action="/student/<%=student._id%>/<%=Perti_Admin._id%>/update" method="GET">
+                                <button>Edit</button>
+                            </form>
+                            <form action="/student/<%=student._id%>/<%= Perti_Admin._id%>/delete?_method=DELETE" method="POST">
+                                <button>Delete</button>
+                            </form>
+                        </div>
+            </li>
+            <% }); %>
+    </ul>
+
+</body>
+
+</html>
